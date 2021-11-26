@@ -114,7 +114,7 @@ services:
     image: systementry-9719
     container_name: systementry-9719
     ports: 
-      - 8012:8012
+      - 8013:8013
     env_file: .env
     depends_on:
       - mongo

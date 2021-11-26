@@ -4,11 +4,23 @@ import * as bodyParser from 'body-parser';
 import Controller from './interface/controller.interface';
 import { WinstonLogger } from './config/WinstonLogger';
 import {
+    securityController,
+    AuthproxyController,
+    gcamController,
+    AdminController,
+    CamundaController,
+    systemcredentialmanagerController,
     UserController
     } from './apicontroller';
 
 const PORT = 8000
 let apisController = [ 
+    new securityController(),
+    new AuthproxyController(),
+    new gcamController(),
+    new AdminController(),
+    new CamundaController(),
+    new systemcredentialmanagerController(),
     new UserController()
     ]
 class App {
