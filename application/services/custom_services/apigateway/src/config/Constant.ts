@@ -1,0 +1,1 @@
+export const SYSTEMENTRYURL = process.env.SYSTEMENTRYURL;
